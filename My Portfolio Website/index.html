@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>ojone's portfolio</title>
+    </head>
+    <body>
+        <div class="portfolio-body">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home icon"></i>Home</a></li>
+                    <li><a href="#about"><i class="far fa-smile-beam icon"></i>About me!</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram icon"></i>Projects</a></li>
+                    <div class="contact"><a href="mailto:susanojone@gmail.com"><i class="far fa-paper-plane icon"></i></a>
+                    <div class="contact-block" style = "position: absolute;">
+                        Email me
+                    </div></div>
+                </ul>
+            </div>
+            <div class="portfolio-content">
+                <div id="home" align="center">
+                        <div class="intro">
+                           <p> Hi! I'm Susan.</p>
+                           <p> A self-taught front-end web developer</p>
+                           <p> who designs, codes and has a penchant for solving problems.</p>
+                           
+                            <a href = "#about">Learn More About Me</a>
+                        </div>
+                    </div>
+                <div id="about" align="left">
+                    <div class="my-image"><img src="pics/test.jpg"/></div>
+                    <div class="about-intro">
+                        <p class="heading">ABOUT SUSAN</p>
+                        <div><p> Welcome to my portfolio website! I'm a front-end developer and currently a student majoring in Electronics and Electrical Engineering at Obafemi Awolowo University,
+                             I create and build sophisticated webpages that comprise both aesthetics and functionality. </p>
+                           <p> My journey started five months ago when I decided to change career paths by taking up a skill in computer programming. 
+                               This stemmed from my enthusiasm towards deducing and solving problems and my commendable logical skills. I don't have a lot of experience, but I'm a go-getter, I do anything and everything I set my mind to and I'm always working to keep my skills updated. </p>
+                            <p class="skill-set" >View My Skill Set
+                             <ul class="skill-set-content"style="position: absolute; display: none">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li> JAVASCRIPT including ECMAscript6, Jquery, React, AngularJs and VueJs.</li>
+                            </ul>
+                            </p>
+                            <!-- talk about how you can help them then talk about your hopes and dreams -->
+                        </div>
+
+                        </div>
+                    </div>
+               
+                <div id="projects">
+                    <p class="project-title" align = "right"> MY DEMO WEBSITES</p>
+                   <div class="projects">
+                    <div>
+                        <p class="heading" align="center">NIBBLE RESTAURANT</p>
+                        <img src="pics/nibblemockup.jpg"/>
+                        <p class="website-link">
+                            <a href="https://agitated-curie-53ea13.netlify.app " target="_blank">View website</a>
+                            <a href="https://github.com/susan0jone/simple-practice-restaurant.git" target="_blank">View Code</a>
+                        </p>
+                        
+                    </div>
+                    <div> 
+                       <p class="heading" align="center">SELIA PERFUMES</p>
+                        <img src="pics/pegasusmockup.jpg"/>
+                        <p  class="website-link">
+                            <a href="https://elastic-meninsky-fd37f9.netlify.app" target="_blank">View website</a>
+                            <a href="https://github.com/susan0jone/Perfume-app.git" target="_blank">View Code</a>
+                        </p>
+                    </div>
+
+                   </div>
+                </div>
+                <div id="contact" align="center">
+                    <div>
+                       <p class="contact-content">Interested In Working With Me?</p>
+                        <p><a href="mailto:susanojone@gmail.com">Email me</a></p>
+                    </div>
+
+
+                </div>
+               
+            </div>
+
+        </div>
+        <script>
+           $(function(){
+              $(".skill-set").click(function(){
+                $(".skill-set-content").toggle();
+               });
+               $(window).scroll(function() {
+                if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+               
+                    $("#contact").slideDown();
+                    } else {
+                        $("#contact").slideUp();
+                     }
+               });
+        
+      });
+
+            </script>
+    </body>
+</html>
